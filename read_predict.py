@@ -43,7 +43,7 @@ while True:
         ph, turb, cond = map(float, line.split(','))
 
         # Prepare input for model
-        X = np.array([[ph, turb, cond]])
+        X = np.array([[cond, ph, turb]])
 
         # Prediction
         y_pred = model.predict(X)[0]
