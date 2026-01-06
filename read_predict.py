@@ -49,7 +49,7 @@ while True:
         y_pred = model.predict(X)[0]
         y_prob = model.predict_proba(X)[0][1]
 
-        status = "GOOD ✅" if y_pred == 1 else "BAD ❌"
+        status = "GOOD " if y_pred == 1 else "BAD "
 
         print(f"pH={ph:.2f}, Turb={turb:.2f}, Cond={cond:.0f}")
         print(f"Prediction: {status} (confidence={y_prob:.2f})")
@@ -64,9 +64,9 @@ while True:
         time.sleep(2)
 
     except ValueError:
-        print("⚠ Data format error")
+        print(" Data format error")
     except KeyboardInterrupt:
-        print("🛑 Stopped by user")
+        print(" Stopped by user")
         break
 
 ser.close()
