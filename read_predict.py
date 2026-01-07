@@ -106,7 +106,7 @@ while True:
     except ValueError:
         print("Data format error")
     except KeyboardInterrupt:
-        print("🛑 Stopped by user")
+        print(" Stopped by user")
         break
 
 #ser.close()
