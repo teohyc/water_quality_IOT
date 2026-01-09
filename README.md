@@ -1,3 +1,4 @@
-Library used: numpy, pandas, matplotlib, scikit-learn, seaborn
-
-Dateset source: https://data.gov.au/data/dataset/nsw-raw-water-quality-data
+Water quality monitor system that utilises rapsberry pi 4 (microprocessor) and arduino uno (microcontroller).
+Utilises machine learning (random forest) to predict quality of local water via reading conductivity, pH and turbidity via sensors.
+IoT functions via api to the custom telegram bot (@BotFather created).
+Notification sent when there is a change in water quality via telegram app.
